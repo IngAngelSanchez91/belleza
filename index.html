@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belleza Integral — Inicio</title>
+  <meta name="description" content="Clínica estética de lujo. Procedimientos estéticos y tratamientos de bienestar de clase mundial en Miami."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Belleza Integral</a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="services.html">Servicios</a></li>
+      <li><a href="membership.html">Membresía</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+    <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav__mobile" role="navigation" aria-label="Menú móvil">
+  <a href="index.html">Inicio</a>
+  <a href="services.html">Servicios</a>
+  <a href="membership.html">Membresía</a>
+  <a href="about.html">Nosotros</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+</div>
+
+<main>
+
+<!-- ══ HERO ════════════════════════════════ -->
+<section class="hero" aria-label="Sección principal">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__content">
+      <span class="eyebrow hero__eyebrow reveal">Clínica Estética de Lujo</span>
+      <h1 class="hero__title reveal reveal-delay-1">
+        Tu camino hacia una<br/><em>belleza radiante</em>
+      </h1>
+      <p class="hero__desc reveal reveal-delay-2">
+        Fusionamos la ciencia médica de vanguardia con el arte del bienestar holístico. Cada tratamiento está diseñado para realzar tu belleza natural con resultados excepcionales.
+      </p>
+      <div class="hero__actions reveal reveal-delay-3">
+        <a href="services.html" class="btn btn--primary">
+          <span class="material-symbols-outlined" style="font-size:18px">spa</span>
+          Ver Servicios
+        </a>
+        <a href="contact.html" class="btn btn--ghost">
+          Reservar Consulta
+        </a>
+      </div>
+    </div>
+    <div class="hero__media" aria-hidden="true">
+      <div class="hero__img-wrap">
+        <img
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN4n-JNkPL6nr3DFpCyH20-Pe8pHM4hoRAW3XJQ_oWT7zReetzMGMtkpy-_eFuX5mdiGolyDXQUWgva8Cgjh75YPeWPsp0NtwReudqaLSMQEAi7cKHfwpwMt9VrNpRMd5n0CXaVhz1Y3l42D6A4n3hfs-eNrYk4q58oHR36BFAaM9ZJaBxAwZYzjvsbX3MgMXsZBSh3EY-zqVCrCXtgulcI9n5Oa2_ew9LZz0ChnPTjIjcj2BA9KY8yFwFgG-p4LnmSyHGk0pqvN4"
+          alt="Interior de spa de lujo con iluminación cálida, mármol y lirios"
+          loading="eager"
+        />
+      </div>
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="hero__badge" aria-label="Clientes satisfechos">
+        <div class="hero__badge-icon">
+          <span class="material-symbols-outlined icon-filled">favorite</span>
+        </div>
+        <div>
+          <div class="hero__badge-label">Clientes satisfechos</div>
+          <div class="hero__badge-value">+5,000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ════════════════════════════════ -->
+<section class="stats" aria-label="Cifras clave">
+  <div class="stats__inner">
+    <div class="reveal">
+      <div class="stats__number" data-count="5000" data-suffix="+">0+</div>
+      <div class="stats__label">Clientes atendidos</div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="stats__number" data-count="12" data-suffix="">0</div>
+      <div class="stats__label">Años de experiencia</div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <div class="stats__number" data-count="98" data-suffix="%">0%</div>
+      <div class="stats__label">Satisfacción del cliente</div>
+    </div>
+    <div class="reveal reveal-delay-3">
+      <div class="stats__number" data-count="30" data-suffix="+">0+</div>
+      <div class="stats__label">Tratamientos disponibles</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICIOS PREVIEW ════════════════════ -->
+<section class="section" aria-labelledby="services-preview-title">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">Nuestros Tratamientos</span>
+      <h2 class="section-title" id="services-preview-title">Servicios diseñados<br/>para tu bienestar</h2>
+      <p class="section-desc">Desde procedimientos estéticos avanzados hasta rituales de relajación total, cada servicio es una experiencia transformadora.</p>
+    </div>
+    <div class="services-preview__grid">
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card__icon">
+          <span class="material-symbols-outlined">face_retouching_natural</span>
+        </div>
+        <h3 class="service-card__name">Tratamientos Faciales</h3>
+        <p class="service-card__desc">Hidratación profunda, rejuvenecimiento y luminosidad con tecnología de última generación.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-card__icon">
+          <span class="material-symbols-outlined">spa</span>
+        </div>
+        <h3 class="service-card__name">Terapias Corporales</h3>
+        <p class="service-card__desc">Masajes terapéuticos, envolturas y tratamientos de modelado corporal para una silueta perfecta.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-card__icon">
+          <span class="material-symbols-outlined">auto_fix_high</span>
+        </div>
+        <h3 class="service-card__name">Medicina Estética</h3>
+        <p class="service-card__desc">Rellenos, bótox y procedimientos no invasivos con resultados naturales y duraderos.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-card__icon">
+          <span class="material-symbols-outlined">wb_sunny</span>
+        </div>
+        <h3 class="service-card__name">Fotorrejuvenecimiento</h3>
+        <p class="service-card__desc">Tecnología láser y luz pulsada para una piel radiante y uniforme sin tiempo de recuperación.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-card__icon">
+          <span class="material-symbols-outlined">self_improvement</span>
+        </div>
+        <h3 class="service-card__name">Bienestar Integral</h3>
+        <p class="service-card__desc">Programas personalizados de wellness que combinan mente, cuerpo y espíritu.</p>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-card__icon">
+          <span class="material-symbols-outlined">brush</span>
+        </div>
+        <h3 class="service-card__name">Nail & Beauty Bar</h3>
+        <p class="service-card__desc">Manicure, pedicure y servicios de belleza con productos premium de clase mundial.</p>
+      </article>
+    </div>
+    <div style="text-align:center; margin-top:3rem;" class="reveal">
+      <a href="services.html" class="btn btn--outline">Ver todos los servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIOS ══════════════════════════ -->
+<section class="testimonial-strip" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="testimonial-strip__header reveal">
+      <span class="eyebrow">Testimonios</span>
+      <h2 class="section-title" id="testimonials-title">Lo que dicen nuestras clientas</h2>
+    </div>
+    <div class="testimonials-track">
+      <article class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-card__quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-card__text">Un lugar mágico donde cada visita es una experiencia de lujo total. Los resultados de mi tratamiento facial superaron todas mis expectativas.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">S</div>
+          <div>
+            <div class="testimonial-card__name">Sofía Martínez</div>
+            <div class="testimonial-card__role">Cliente desde 2021</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-card__quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-card__text">El equipo es increíblemente profesional y atento. Me siento completamente transformada después de cada sesión. ¡100% recomendado!</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">V</div>
+          <div>
+            <div class="testimonial-card__name">Valentina Cruz</div>
+            <div class="testimonial-card__role">Miembro Platinum</div>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal reveal-delay-3">
+        <div class="testimonial-card__quote">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-card__text">La membresía vale cada centavo. Acceso prioritario, descuentos exclusivos y una atención personalizada que no encontrarás en ningún otro lugar.</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">I</div>
+          <div>
+            <div class="testimonial-card__name">Isabella Ramos</div>
+            <div class="testimonial-card__role">Miembro Gold</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════ -->
+<section class="cta-band reveal" aria-labelledby="cta-title">
+  <div class="container" style="text-align:center">
+    <span class="eyebrow" style="color: var(--clr-primary-dim)">Empieza hoy</span>
+    <h2 class="section-title" id="cta-title">¿Lista para transformar tu belleza?</h2>
+    <p class="section-desc">Reserva tu consulta gratuita y descubre el tratamiento perfecto para ti. Nuestros especialistas te guiarán en cada paso del proceso.</p>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--light">Reservar Consulta Gratuita</a>
+      <a href="membership.html" class="btn btn--outline-light">Ver Membresías</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NEWSLETTER ════════════════════════════ -->
+<section class="newsletter" aria-labelledby="newsletter-title">
+  <div class="newsletter__inner">
+    <span class="eyebrow">Círculo Exclusivo</span>
+    <h2 class="section-title" id="newsletter-title" style="font-size:1.875rem">Únete a nuestro círculo</h2>
+    <p class="section-desc" style="margin:0 auto; text-align:center; font-size:.9375rem">
+      Recibe consejos de belleza exclusivos, ofertas de temporada e invitaciones a eventos privados de la clínica.
+    </p>
+    <form class="newsletter__form" novalidate>
+      <input class="newsletter__input" type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico"/>
+      <button type="submit" class="btn btn--primary">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand-name">Belleza Integral</div>
+      <p class="footer__brand-desc">Redefiniendo la estética moderna a través de la fusión de experiencia médica y visión artística. Tu santuario de belleza holística en Miami.</p>
+    </div>
+    <div>
+      <p class="footer__col-title">Accesos Rápidos</p>
+      <ul class="footer__links">
+        <li><a href="about.html">Nuestra Clínica</a></li>
+        <li><a href="services.html">Galería de Tratamientos</a></li>
+        <li><a href="membership.html">Membresías</a></li>
+        <li><a href="about.html">Nuestro Equipo</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Soporte</p>
+      <ul class="footer__links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Servicio</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a href="#">Empleos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Conecta</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="Instagram">
+          <span class="material-symbols-outlined" style="font-size:18px">photo_camera</span>
+        </a>
+        <a href="#" class="footer__social" aria-label="Facebook">
+          <span class="material-symbols-outlined" style="font-size:18px">public</span>
+        </a>
+        <a href="#" class="footer__social" aria-label="TikTok">
+          <span class="material-symbols-outlined" style="font-size:18px">video_camera_front</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2024 Belleza Integral. Todos los derechos reservados.</p>
+    <nav class="footer__legal" aria-label="Legal">
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="#">Cookies</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

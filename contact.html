@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto — Belleza Integral</title>
+  <meta name="description" content="Contáctanos y reserva tu cita en Belleza Integral. Estamos en Miami, FL."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Belleza Integral</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="services.html">Servicios</a></li>
+      <li><a href="membership.html">Membresía</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+    <button class="nav__burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <a href="index.html">Inicio</a>
+  <a href="services.html">Servicios</a>
+  <a href="membership.html">Membresía</a>
+  <a href="about.html">Nosotros</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+</div>
+
+<main>
+
+<!-- ══ PAGE HERO ════════════════════════════ -->
+<section class="page-hero" style="padding-bottom:3rem">
+  <div class="container">
+    <span class="eyebrow reveal">Hablemos</span>
+    <h1 class="section-title reveal reveal-delay-1">
+      Inicia tu viaje hacia<br/><em style="font-style:italic;color:var(--clr-primary)">la belleza radiante</em>
+    </h1>
+    <p class="section-desc reveal reveal-delay-2" style="margin:0 auto; text-align:center">
+      Ya sea que busques un tratamiento transformador o simplemente un momento de relajación, nuestro equipo está aquí para orientarte con cuidado experto y atención personalizada.
+    </p>
+  </div>
+</section>
+
+<!-- ══ CONTACT GRID ══════════════════════════ -->
+<div class="contact-grid">
+
+  <!-- Form -->
+  <div>
+    <div class="contact-form-card reveal">
+      <h2 class="contact-form__title">Envíanos un Mensaje</h2>
+      <p class="contact-form__subtitle">Completa el formulario y te responderemos en menos de 24 horas.</p>
+      <form class="form-fields" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">Nombre</label>
+            <input id="fname" type="text" placeholder="Elena" autocomplete="given-name"/>
+          </div>
+          <div class="field">
+            <label for="lname">Apellido</label>
+            <input id="lname" type="text" placeholder="Rodríguez" autocomplete="family-name"/>
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Correo Electrónico</label>
+          <input id="email" type="email" placeholder="elena@ejemplo.com" autocomplete="email"/>
+        </div>
+        <div class="field">
+          <label for="phone">Teléfono (opcional)</label>
+          <input id="phone" type="tel" placeholder="+1 (555) 000-0000" autocomplete="tel"/>
+        </div>
+        <div class="field">
+          <label for="subject">Asunto</label>
+          <select id="subject">
+            <option value="">Selecciona un tema…</option>
+            <option>Consulta General</option>
+            <option>Consulta de Tratamiento</option>
+            <option>Programa de Membresía</option>
+            <option>Reserva de Cita</option>
+            <option>Empleos</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Tu Mensaje</label>
+          <textarea id="message" rows="5" placeholder="¿Cómo podemos ayudarte a alcanzar tus objetivos?"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center; padding:1.1rem 2rem; font-size:.875rem; letter-spacing:.1em">
+          <span class="material-symbols-outlined" style="font-size:18px">send</span>
+          Enviar Consulta
+        </button>
+        <p style="font-size:.8125rem; color:var(--clr-on-surface-var); text-align:center; margin-top:.5rem">
+          Tus datos están protegidos. Consulta nuestra <a href="#" style="color:var(--clr-primary)">Política de Privacidad</a>.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Info -->
+  <div class="contact-info reveal reveal-delay-2">
+
+    <div>
+      <div class="contact-block__label">
+        <span class="material-symbols-outlined" style="font-size:18px">call</span>
+        Teléfono
+      </div>
+      <p class="contact-block__primary">+1 (555) 234-8899</p>
+      <p class="contact-block__secondary">Internacional: +1 (555) 234-8800</p>
+    </div>
+
+    <div>
+      <div class="contact-block__label">
+        <span class="material-symbols-outlined" style="font-size:18px">mail</span>
+        Correo Electrónico
+      </div>
+      <p class="contact-block__primary">hola@bellezaintegral.com</p>
+      <p class="contact-block__secondary">Respuesta en menos de 24 horas</p>
+    </div>
+
+    <div>
+      <div class="contact-block__label">
+        <span class="material-symbols-outlined" style="font-size:18px">location_on</span>
+        Ubicación
+      </div>
+      <p class="contact-block__primary">452 Harmony Plaza, Suite 200<br/>Miami, FL 33101</p>
+      <p class="contact-block__secondary">A 2 minutos del metro Brickell</p>
+    </div>
+
+    <!-- Map -->
+    <div class="map-placeholder">
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAEgTWYQDWHnr213kVjr-IrFnfL57GQy43Pod6MGPzzWl_4NCVqHZJhh37EhhtVKqTNK_Rp7synNiHLmW4uyng76fJN0Nw-OyAxKwcQjho0_LvoBIQ1r_Y9kpiOUEoTh5_GGaB6IC0sKdEitsmXuiJX6HBMH1n5Yw7jPvyCFxxF6SZJGil-ogy2836ydSmxsMEngqlojgoxwpHCViz_spqZ46nqQNZI4T3otQrZ5Zcl-4AWeQ8zTF30EML9aSsWiey-upw4NGrNDA"
+        alt="Mapa de ubicación"
+        aria-hidden="true"
+      />
+      <div class="map-pin" aria-hidden="true">
+        <span class="material-symbols-outlined icon-filled">location_on</span>
+      </div>
+    </div>
+
+    <!-- Hours -->
+    <div>
+      <div class="contact-block__label">
+        <span class="material-symbols-outlined" style="font-size:18px">schedule</span>
+        Horario de Atención
+      </div>
+      <div class="hours-table">
+        <div class="hours-row">
+          <span class="hours-row__day">Lunes – Viernes</span>
+          <span class="hours-row__time">9:00 AM – 8:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-row__day">Sábado</span>
+          <span class="hours-row__time">10:00 AM – 6:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-row__day">Domingo</span>
+          <span class="hours-row__time">Solo con cita previa</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick actions -->
+    <div style="display:flex; flex-direction:column; gap:.75rem">
+      <a href="tel:+15552348899" class="btn btn--outline" style="width:100%; justify-content:center">
+        <span class="material-symbols-outlined" style="font-size:18px">call</span>
+        Llamar Ahora
+      </a>
+      <a href="https://wa.me/15552348899" target="_blank" rel="noopener" class="btn btn--ghost" style="width:100%; justify-content:center">
+        <span class="material-symbols-outlined" style="font-size:18px">chat</span>
+        WhatsApp
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══ NEWSLETTER ════════════════════════════ -->
+<section class="newsletter">
+  <div class="newsletter__inner reveal">
+    <span class="eyebrow">Círculo Exclusivo</span>
+    <h2 class="section-title" style="font-size:1.875rem">Únete a nuestro círculo</h2>
+    <p class="section-desc" style="margin:0 auto; text-align:center; font-size:.9375rem">
+      Recibe consejos de belleza exclusivos, ofertas de temporada e invitaciones a eventos privados de la clínica.
+    </p>
+    <form class="newsletter__form" novalidate>
+      <input class="newsletter__input" type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico"/>
+      <button type="submit" class="btn btn--primary">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand-name">Belleza Integral</div>
+      <p class="footer__brand-desc">Redefiniendo la estética moderna a través de la fusión de experiencia médica y visión artística. Tu santuario de belleza holística en Miami.</p>
+    </div>
+    <div>
+      <p class="footer__col-title">Accesos Rápidos</p>
+      <ul class="footer__links">
+        <li><a href="about.html">Nuestra Clínica</a></li>
+        <li><a href="services.html">Tratamientos</a></li>
+        <li><a href="membership.html">Membresías</a></li>
+        <li><a href="about.html">Equipo</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Soporte</p>
+      <ul class="footer__links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Servicio</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Empleos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Conecta</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social"><span class="material-symbols-outlined" style="font-size:18px">photo_camera</span></a>
+        <a href="#" class="footer__social"><span class="material-symbols-outlined" style="font-size:18px">public</span></a>
+        <a href="#" class="footer__social"><span class="material-symbols-outlined" style="font-size:18px">video_camera_front</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2024 Belleza Integral. Todos los derechos reservados.</p>
+    <nav class="footer__legal"><a href="#">Privacidad</a><a href="#">Términos</a><a href="#">Cookies</a></nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

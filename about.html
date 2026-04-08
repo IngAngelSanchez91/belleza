@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosotros — Belleza Integral</title>
+  <meta name="description" content="Conoce la historia, el equipo y los valores detrás de Belleza Integral."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .about-story {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 6rem 3rem;
+    }
+    .about-story__img {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      height: 520px;
+      box-shadow: var(--shadow-lg);
+    }
+    .about-story--reverse .about-story__img { order: 2; }
+    .about-story--reverse .about-story__text { order: 1; }
+    .about-story__text .section-desc { max-width: 100%; }
+    .timeline {
+      max-width: 800px;
+      margin: 3rem auto 0;
+      padding: 0 2rem;
+    }
+    .timeline-item {
+      display: flex;
+      gap: 2rem;
+      padding-bottom: 3rem;
+      position: relative;
+    }
+    .timeline-item:not(:last-child)::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 44px;
+      width: 2px;
+      height: calc(100% - 20px);
+      background: var(--clr-outline-var);
+    }
+    .timeline-item__dot {
+      width: 40px; height: 40px;
+      border-radius: var(--radius-full);
+      background: var(--clr-primary-fixed);
+      border: 3px solid var(--clr-primary);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--clr-primary);
+      font-size: .875rem;
+      font-weight: 800;
+    }
+    .timeline-item__year {
+      font-size: .75rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--clr-primary);
+      margin-bottom: .25rem;
+    }
+    .timeline-item__title {
+      font-family: var(--ff-headline);
+      font-size: 1.125rem;
+      margin-bottom: .375rem;
+    }
+    .timeline-item__text {
+      font-size: .9rem;
+      color: var(--clr-on-surface-var);
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .about-story { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
+      .about-story__img { height: 300px; order: 1 !important; }
+      .about-story--reverse .about-story__text { order: 2 !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Belleza Integral</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="services.html">Servicios</a></li>
+      <li><a href="membership.html">Membresía</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+    <button class="nav__burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <a href="index.html">Inicio</a>
+  <a href="services.html">Servicios</a>
+  <a href="membership.html">Membresía</a>
+  <a href="about.html">Nosotros</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+</div>
+
+<main>
+
+<!-- ══ HERO ════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Nuestra Historia</span>
+    <h1 class="section-title reveal reveal-delay-1">
+      Más que una clínica,<br/><em style="font-style:italic; color:var(--clr-primary)">un santuario</em>
+    </h1>
+    <p class="section-desc reveal reveal-delay-2" style="margin:0 auto; text-align:center">
+      Desde 2012, hemos redefinido los estándares de la belleza estética en Miami, fusionando ciencia médica de vanguardia con un trato verdaderamente humano.
+    </p>
+  </div>
+</section>
+
+<!-- ══ STORY 1 ══════════════════════════════ -->
+<div class="about-story">
+  <div class="about-story__img reveal">
+    <img
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAEgTWYQDWHnr213kVjr-IrFnfL57GQy43Pod6MGPzzWl_4NCVqHZJhh37EhhtVKqTNK_Rp7synNiHLmW4uyng76fJN0Nw-OyAxKwcQjho0_LvoBIQ1r_Y9kpiOUEoTh5_GGaB6IC0sKdEitsmXuiJX6HBMH1n5Yw7jPvyCFxxF6SZJGil-ogy2836ydSmxsMEngqlojgoxwpHCViz_spqZ46nqQNZI4T3otQrZ5Zcl-4AWeQ8zTF30EML9aSsWiey-upw4NGrNDA"
+      alt="Interior de la clínica Belleza Integral"
+    />
+  </div>
+  <div class="about-story__text reveal reveal-delay-2">
+    <span class="eyebrow">Nuestra Fundación</span>
+    <h2 class="section-title">Nacidos de la pasión por la belleza auténtica</h2>
+    <div class="divider"></div>
+    <p class="section-desc" style="max-width:100%; margin-bottom:1.5rem">
+      Belleza Integral nació de la visión de la Dra. María Elena Vargas, quien después de más de una década en medicina estética quiso crear un espacio donde cada paciente fuera tratada como única.
+    </p>
+    <p class="section-desc" style="max-width:100%">
+      No queríamos una clínica más. Queríamos un santuario donde ciencia, arte y bienestar se fusionaran para transformar no solo la apariencia, sino la confianza de cada persona que cruzara nuestra puerta.
+    </p>
+  </div>
+</div>
+
+<!-- ══ VALORES ══════════════════════════════ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto">
+      <span class="eyebrow">Lo Que Nos Define</span>
+      <h2 class="section-title">Nuestros valores fundamentales</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal reveal-delay-1">
+        <h3 class="value-card__title">🔬 Excelencia Médica</h3>
+        <p class="value-card__text">Todo procedimiento es realizado o supervisado por profesionales médicos certificados. La seguridad y el rigor científico no son negociables para nosotros.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-2">
+        <h3 class="value-card__title">✨ Belleza Natural</h3>
+        <p class="value-card__text">Creemos en resultados que potencian tu belleza única, no que te transforman en alguien más. Naturalidad y sutileza son nuestros principios estéticos.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-3">
+        <h3 class="value-card__title">🤝 Atención Personalizada</h3>
+        <p class="value-card__text">Cada persona es diferente. Por eso empezamos siempre con una evaluación profunda y diseñamos un plan completamente personalizado para cada clienta.</p>
+      </div>
+      <div class="value-card reveal reveal-delay-4">
+        <h3 class="value-card__title">🌿 Bienestar Integral</h3>
+        <p class="value-card__text">La verdadera belleza viene de adentro. Integramos mente, cuerpo y espíritu en nuestros programas para resultados que van más allá de lo superficial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TIMELINE ══════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto">
+      <span class="eyebrow">Nuestra Trayectoria</span>
+      <h2 class="section-title">12 años de transformaciones</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-item__dot">●</div>
+        <div>
+          <p class="timeline-item__year">2012</p>
+          <h3 class="timeline-item__title">Fundación de la clínica</h3>
+          <p class="timeline-item__text">La Dra. Vargas abre Belleza Integral en el corazón de Miami con un equipo de 5 especialistas y la firme convicción de cambiar los estándares de la estética médica.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-item__dot">●</div>
+        <div>
+          <p class="timeline-item__year">2015</p>
+          <h3 class="timeline-item__title">Expansión y primer reconocimiento</h3>
+          <p class="timeline-item__text">Ampliamos nuestras instalaciones, incorporamos tecnología láser de última generación y recibimos el premio "Best Medical Spa in South Florida" por primera vez.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-item__dot">●</div>
+        <div>
+          <p class="timeline-item__year">2018</p>
+          <h3 class="timeline-item__title">Lanzamiento del programa de membresías</h3>
+          <p class="timeline-item__text">Creamos nuestro exclusivo programa de membresías para ofrecer experiencias continuas y personalizadas. En el primer año, más de 300 miembros se unieron al círculo.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-item__dot">●</div>
+        <div>
+          <p class="timeline-item__year">2021</p>
+          <h3 class="timeline-item__title">Certificación internacional</h3>
+          <p class="timeline-item__text">Obtuvimos la certificación ISAPS y expandimos nuestro equipo a 25 especialistas, incluyendo médicos estéticos, dermatólogos, nutricionistas y psicólogos del bienestar.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-item__dot">●</div>
+        <div>
+          <p class="timeline-item__year">2024</p>
+          <h3 class="timeline-item__title">Presente: más de 5,000 clientas satisfechas</h3>
+          <p class="timeline-item__text">Hoy somos la clínica estética de referencia en Miami con más de 5,000 clientas, un 98% de satisfacción y la misma pasión con la que empezamos hace 12 años.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EQUIPO ════════════════════════════════ -->
+<section class="section section--alt" aria-labelledby="team-title">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto">
+      <span class="eyebrow">Nuestro Equipo</span>
+      <h2 class="section-title" id="team-title">Los expertos detrás de tu transformación</h2>
+      <p class="section-desc" style="margin:0 auto; text-align:center">Más de 25 especialistas certificados con formación internacional al servicio de tu belleza y bienestar.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-card__img">MV</div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Dra. María Elena Vargas</h3>
+          <p class="team-card__role">Fundadora & Directora Médica</p>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-card__img">CL</div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Dr. Carlos Linares</h3>
+          <p class="team-card__role">Médico Estético Especialista</p>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-3">
+        <div class="team-card__img">AS</div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Andrea Suárez</h3>
+          <p class="team-card__role">Esteticista Senior & Láser</p>
+        </div>
+      </div>
+      <div class="team-card reveal reveal-delay-4">
+        <div class="team-card__img">PR</div>
+        <div class="team-card__body">
+          <h3 class="team-card__name">Dra. Patricia Ríos</h3>
+          <p class="team-card__role">Dermatóloga Clínica</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════ -->
+<section class="cta-band">
+  <div class="container" style="text-align:center">
+    <span class="eyebrow" style="color:var(--clr-primary-dim)">Forma parte de nuestra historia</span>
+    <h2 class="section-title">¿Lista para conocernos?</h2>
+    <p class="section-desc">Reserva una visita a nuestra clínica y descubre en persona todo lo que Belleza Integral puede hacer por ti.</p>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--light">Visitar la Clínica</a>
+      <a href="services.html" class="btn btn--outline-light">Ver Servicios</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand-name">Belleza Integral</div>
+      <p class="footer__brand-desc">Redefiniendo la estética moderna a través de la fusión de experiencia médica y visión artística.</p>
+    </div>
+    <div>
+      <p class="footer__col-title">Accesos Rápidos</p>
+      <ul class="footer__links">
+        <li><a href="about.html">Nuestra Clínica</a></li>
+        <li><a href="services.html">Tratamientos</a></li>
+        <li><a href="membership.html">Membresías</a></li>
+        <li><a href="about.html">Equipo</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Soporte</p>
+      <ul class="footer__links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Servicio</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Empleos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Conecta</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social"><span class="material-symbols-outlined" style="font-size:18px">photo_camera</span></a>
+        <a href="#" class="footer__social"><span class="material-symbols-outlined" style="font-size:18px">public</span></a>
+        <a href="#" class="footer__social"><span class="material-symbols-outlined" style="font-size:18px">video_camera_front</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2024 Belleza Integral. Todos los derechos reservados.</p>
+    <nav class="footer__legal"><a href="#">Privacidad</a><a href="#">Términos</a><a href="#">Cookies</a></nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

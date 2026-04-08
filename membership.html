@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Membresía — Belleza Integral</title>
+  <meta name="description" content="Únete a nuestro programa de membresía y disfruta de beneficios exclusivos en Belleza Integral."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    .faq { max-width: 760px; margin: 3rem auto 0; }
+    .faq-item {
+      border-bottom: 1px solid var(--clr-outline-var);
+      padding: 1.25rem 0;
+    }
+    .faq-item__q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      font-family: var(--ff-headline);
+      font-size: 1.0625rem;
+      color: var(--clr-on-surface);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0;
+    }
+    .faq-item__q .material-symbols-outlined {
+      transition: transform .3s ease;
+      flex-shrink: 0;
+      color: var(--clr-primary);
+    }
+    .faq-item.open .faq-item__q .material-symbols-outlined { transform: rotate(180deg); }
+    .faq-item__a {
+      font-size: .9375rem;
+      color: var(--clr-on-surface-var);
+      line-height: 1.75;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, padding .3s ease;
+    }
+    .faq-item.open .faq-item__a { max-height: 300px; padding-top: .875rem; }
+
+    .perks-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .perk-card {
+      background: var(--clr-surface-bright);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      text-align: center;
+      border: 1px solid var(--clr-outline-var);
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .perk-card:hover { border-color: var(--clr-primary); transform: translateY(-3px); }
+    .perk-card__icon {
+      width: 60px; height: 60px;
+      border-radius: var(--radius-full);
+      background: var(--clr-primary-fixed);
+      color: var(--clr-primary);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.5rem;
+    }
+    .perk-card__title { font-family: var(--ff-headline); font-size: 1.0625rem; margin-bottom: .5rem; }
+    .perk-card__text { font-size: .875rem; color: var(--clr-on-surface-var); line-height: 1.65; }
+
+    @media (max-width: 768px) {
+      .perks-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .perks-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Belleza Integral</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="services.html">Servicios</a></li>
+      <li><a href="membership.html">Membresía</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+    <button class="nav__burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav__mobile">
+  <a href="index.html">Inicio</a>
+  <a href="services.html">Servicios</a>
+  <a href="membership.html">Membresía</a>
+  <a href="about.html">Nosotros</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+</div>
+
+<main>
+
+<!-- ══ HERO ════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal">Programa Exclusivo</span>
+    <h1 class="section-title reveal reveal-delay-1">
+      Únete a nuestro<br/><em style="font-style:italic;color:var(--clr-primary)">círculo de privilegios</em>
+    </h1>
+    <p class="section-desc reveal reveal-delay-2" style="margin:0 auto; text-align:center">
+      Las membresías de Belleza Integral te dan acceso prioritario a tratamientos premium, descuentos exclusivos y una experiencia verdaderamente personalizada.
+    </p>
+  </div>
+</section>
+
+<!-- ══ PERKS ════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto">
+      <span class="eyebrow">¿Por qué ser miembro?</span>
+      <h2 class="section-title">Beneficios que hacen la diferencia</h2>
+    </div>
+    <div class="perks-grid">
+      <div class="perk-card reveal reveal-delay-1">
+        <div class="perk-card__icon"><span class="material-symbols-outlined">priority_high</span></div>
+        <h3 class="perk-card__title">Reservas Prioritarias</h3>
+        <p class="perk-card__text">Acceso anticipado a la agenda. Reserva hasta 60 días antes que el público general.</p>
+      </div>
+      <div class="perk-card reveal reveal-delay-2">
+        <div class="perk-card__icon"><span class="material-symbols-outlined">local_offer</span></div>
+        <h3 class="perk-card__title">Descuentos Exclusivos</h3>
+        <p class="perk-card__text">Hasta un 30% de descuento en tratamientos, productos y servicios complementarios.</p>
+      </div>
+      <div class="perk-card reveal reveal-delay-3">
+        <div class="perk-card__icon"><span class="material-symbols-outlined">card_giftcard</span></div>
+        <h3 class="perk-card__title">Créditos Mensuales</h3>
+        <p class="perk-card__text">Créditos acumulables cada mes para canjear en cualquier servicio de la clínica.</p>
+      </div>
+      <div class="perk-card reveal reveal-delay-1">
+        <div class="perk-card__icon"><span class="material-symbols-outlined">groups</span></div>
+        <h3 class="perk-card__title">Eventos Privados</h3>
+        <p class="perk-card__text">Invitaciones exclusivas a lanzamientos de tratamientos, cócteles y masterclasses de belleza.</p>
+      </div>
+      <div class="perk-card reveal reveal-delay-2">
+        <div class="perk-card__icon"><span class="material-symbols-outlined">support_agent</span></div>
+        <h3 class="perk-card__title">Concierge Personal</h3>
+        <p class="perk-card__text">Una especialista dedicada a ti disponible por WhatsApp para asesoramiento y reservas 24/7.</p>
+      </div>
+      <div class="perk-card reveal reveal-delay-3">
+        <div class="perk-card__icon"><span class="material-symbols-outlined">science</span></div>
+        <h3 class="perk-card__title">Acceso a Nuevos Tratamientos</h3>
+        <p class="perk-card__text">Sé la primera en probar nuestros nuevos tratamientos en sesiones de presentación privadas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PLANS ════════════════════════════════ -->
+<section class="section section--alt" aria-labelledby="plans-title">
+  <div class="container">
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto">
+      <span class="eyebrow">Nuestros Planes</span>
+      <h2 class="section-title" id="plans-title">Elige tu membresía</h2>
+      <p class="section-desc" style="margin:0 auto; text-align:center">Sin permanencia. Cancela cuando quieras. Todos los precios incluyen impuestos.</p>
+    </div>
+    <div class="plans-grid">
+
+      <!-- Silver -->
+      <div class="plan-card reveal reveal-delay-1">
+        <p class="plan-card__tier">Silver</p>
+        <h3 class="plan-card__name">Esencial</h3>
+        <p class="plan-card__tagline">Perfecto para quienes quieren dar el primer paso hacia el cuidado premium.</p>
+        <div class="plan-card__price">
+          <span class="plan-card__currency">$</span>
+          <span class="plan-card__amount">89</span>
+          <span class="plan-card__period">/mes</span>
+        </div>
+        <ul class="plan-card__features">
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            1 facial básico al mes incluido
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            10% descuento en todos los servicios
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            $50 créditos mensuales acumulables
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Reservas 2 semanas antes
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Acceso a newsletter VIP
+          </li>
+        </ul>
+        <a href="contact.html" class="btn btn--outline" style="width:100%; justify-content:center">Comenzar Silver</a>
+      </div>
+
+      <!-- Gold FEATURED -->
+      <div class="plan-card plan-card--featured reveal reveal-delay-2">
+        <div class="plan-card__badge">Más Popular</div>
+        <p class="plan-card__tier">Gold</p>
+        <h3 class="plan-card__name">Premium</h3>
+        <p class="plan-card__tagline">La experiencia completa Belleza Integral para quienes no se conforman con menos.</p>
+        <div class="plan-card__price">
+          <span class="plan-card__currency">$</span>
+          <span class="plan-card__amount">189</span>
+          <span class="plan-card__period">/mes</span>
+        </div>
+        <ul class="plan-card__features">
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            2 tratamientos premium al mes
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            20% descuento en todos los servicios
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            $120 créditos mensuales acumulables
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Reservas 30 días antes (prioritario)
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Concierge personal por WhatsApp
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Invitaciones a eventos privados
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Descuento 15% en productos
+          </li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary" style="width:100%; justify-content:center">Comenzar Gold</a>
+      </div>
+
+      <!-- Platinum -->
+      <div class="plan-card reveal reveal-delay-3">
+        <p class="plan-card__tier">Platinum</p>
+        <h3 class="plan-card__name">Elite</h3>
+        <p class="plan-card__tagline">Máxima exclusividad para quienes merecen lo mejor sin límites.</p>
+        <div class="plan-card__price">
+          <span class="plan-card__currency">$</span>
+          <span class="plan-card__amount">349</span>
+          <span class="plan-card__period">/mes</span>
+        </div>
+        <ul class="plan-card__features">
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Tratamientos ilimitados (selección)
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            30% descuento en todos los servicios
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            $250 créditos mensuales acumulables
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Reservas 60 días antes (máxima prioridad)
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Consulta médica personalizada trimestral
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Acceso a nuevos tratamientos (beta)
+          </li>
+          <li class="plan-card__feature">
+            <span class="plan-card__feature-icon"><span class="material-symbols-outlined" style="font-size:12px">check</span></span>
+            Kit de productos mensuales a domicilio
+          </li>
+        </ul>
+        <a href="contact.html" class="btn btn--outline" style="width:100%; justify-content:center">Comenzar Platinum</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══════════════════════════════════ -->
+<section class="section" aria-labelledby="faq-title">
+  <div class="container">
+    <div style="text-align:center; max-width:600px; margin:0 auto 1rem" class="reveal">
+      <span class="eyebrow">Preguntas Frecuentes</span>
+      <h2 class="section-title" id="faq-title">Todo lo que necesitas saber</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-item__q">
+          ¿Puedo cancelar mi membresía en cualquier momento?
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <p class="faq-item__a">Sí, todas nuestras membresías son sin permanencia. Puedes cancelar en cualquier momento desde tu panel de cliente o contactando a tu concierge personal, con efecto al final del periodo de facturación vigente.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q">
+          ¿Los créditos mensuales se acumulan?
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <p class="faq-item__a">Los créditos no utilizados se acumulan hasta un máximo de 3 meses. Puedes usarlos en cualquier servicio de la clínica, incluyendo compras de productos de cuidado personal.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q">
+          ¿Puedo cambiar de plan?
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <p class="faq-item__a">Por supuesto. Puedes subir o bajar de categoría en cualquier momento. Los cambios a un plan superior aplican inmediatamente; los cambios a un plan inferior aplican al siguiente ciclo de facturación.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q">
+          ¿La membresía es transferible a otra persona?
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <p class="faq-item__a">Las membresías son personales e intransferibles. Sin embargo, los planes Gold y Platinum incluyen la posibilidad de añadir un acompañante con un 20% de descuento adicional en sus tratamientos.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-item__q">
+          ¿Cuál es el método de pago?
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+        <p class="faq-item__a">Aceptamos tarjetas de crédito y débito (Visa, Mastercard, Amex). El cobro se realiza automáticamente el mismo día de cada mes. También puedes optar por pago anual con un 10% de descuento adicional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══════════════════════════════════ -->
+<section class="cta-band">
+  <div class="container" style="text-align:center">
+    <span class="eyebrow" style="color:var(--clr-primary-dim)">Empieza sin riesgo</span>
+    <h2 class="section-title">Primer mes con 50% de descuento</h2>
+    <p class="section-desc">Usa el código <strong style="color:var(--clr-primary-dim); letter-spacing:.08em">BIENVENIDA</strong> al inscribirte y vive la experiencia Belleza Integral sin compromisos.</p>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--light">Inscribirme Ahora</a>
+      <a href="services.html" class="btn btn--outline-light">Ver Tratamientos</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand-name">Belleza Integral</div>
+      <p class="footer__brand-desc">Redefiniendo la estética moderna a través de la fusión de experiencia médica y visión artística.</p>
+    </div>
+    <div>
+      <p class="footer__col-title">Accesos Rápidos</p>
+      <ul class="footer__links">
+        <li><a href="about.html">Nuestra Clínica</a></li>
+        <li><a href="services.html">Tratamientos</a></li>
+        <li><a href="membership.html">Membresías</a></li>
+        <li><a href="about.html">Equipo</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Soporte</p>
+      <ul class="footer__links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Servicio</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Empleos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Conecta</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="Instagram"><span class="material-symbols-outlined" style="font-size:18px">photo_camera</span></a>
+        <a href="#" class="footer__social" aria-label="Facebook"><span class="material-symbols-outlined" style="font-size:18px">public</span></a>
+        <a href="#" class="footer__social" aria-label="TikTok"><span class="material-symbols-outlined" style="font-size:18px">video_camera_front</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2024 Belleza Integral. Todos los derechos reservados.</p>
+    <nav class="footer__legal"><a href="#">Privacidad</a><a href="#">Términos</a><a href="#">Cookies</a></nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-item__q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>

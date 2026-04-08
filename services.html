@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios — Belleza Integral</title>
+  <meta name="description" content="Descubre nuestra gama completa de tratamientos estéticos y de bienestar en Belleza Integral."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav class="nav" aria-label="Navegación principal">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">Belleza Integral</a>
+    <ul class="nav__links" role="list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="services.html">Servicios</a></li>
+      <li><a href="membership.html">Membresía</a></li>
+      <li><a href="about.html">Nosotros</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+    <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav__mobile" role="navigation">
+  <a href="index.html">Inicio</a>
+  <a href="services.html">Servicios</a>
+  <a href="membership.html">Membresía</a>
+  <a href="about.html">Nosotros</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="btn btn--primary nav__cta">Reservar Cita</a>
+</div>
+
+<main>
+
+<!-- ══ PAGE HERO ════════════════════════════ -->
+<section class="page-hero" aria-labelledby="services-hero-title">
+  <div class="container">
+    <span class="eyebrow reveal">Catálogo de Tratamientos</span>
+    <h1 class="section-title reveal reveal-delay-1" id="services-hero-title">
+      Ciencia y arte para<br/><em style="font-style:italic; color:var(--clr-primary)">tu mejor versión</em>
+    </h1>
+    <p class="section-desc reveal reveal-delay-2" style="margin:0 auto; text-align:center">
+      Cada tratamiento está diseñado por nuestros especialistas para ofrecerte resultados reales, seguros y duraderos. Elige el camino que más te inspire.
+    </p>
+
+    <!-- Tabs filter -->
+    <div class="services-tabs reveal reveal-delay-3" role="tablist" aria-label="Filtrar por categoría">
+      <button class="services-tab active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+      <button class="services-tab" data-filter="facial" role="tab" aria-selected="false">Faciales</button>
+      <button class="services-tab" data-filter="body" role="tab" aria-selected="false">Corporales</button>
+      <button class="services-tab" data-filter="aesthetic" role="tab" aria-selected="false">Medicina Estética</button>
+      <button class="services-tab" data-filter="laser" role="tab" aria-selected="false">Láser & Luz</button>
+      <button class="services-tab" data-filter="wellness" role="tab" aria-selected="false">Bienestar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES LIST ═════════════════════════ -->
+<section class="section" aria-label="Lista de servicios">
+  <div class="services-list">
+
+    <!-- FACIALES -->
+    <article class="service-item reveal" data-category="facial">
+      <div class="service-item__icon"><span class="material-symbols-outlined">face_retouching_natural</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Hydrafacial Signature</h2>
+        <p class="service-item__desc">Limpieza profunda, exfoliación, extracción e hidratación intensiva con sueros personalizados. El tratamiento favorito de las celebridades.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag tag--primary">Más Solicitado</span>
+          <span class="tag">Sin tiempo de recuperación</span>
+          <span class="tag">Resultados inmediatos</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$180</div>
+        <div class="service-item__duration">60 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <article class="service-item reveal" data-category="facial">
+      <div class="service-item__icon"><span class="material-symbols-outlined">diamond</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Facial de Microdermoabrasión</h2>
+        <p class="service-item__desc">Renovación celular avanzada con microdermoabrasión de diamante, seguida de sérum de vitamina C y mascarilla nutritiva.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Antimanchas</span>
+          <span class="tag">Antienvejecimiento</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$145</div>
+        <div class="service-item__duration">75 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <article class="service-item reveal" data-category="facial">
+      <div class="service-item__icon"><span class="material-symbols-outlined">water_drop</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Bioestimulación con Ácido Hialurónico</h2>
+        <p class="service-item__desc">Microinyecciones superficiales de HA para una hidratación profunda dérmica. Efecto "glow" duradero y piel visiblemente más joven.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Profesional médico</span>
+          <span class="tag">3 sesiones recomendadas</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$320</div>
+        <div class="service-item__duration">45 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <!-- CORPORALES -->
+    <article class="service-item reveal" data-category="body">
+      <div class="service-item__icon"><span class="material-symbols-outlined">spa</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Masaje Sueco de Relajación</h2>
+        <p class="service-item__desc">Técnica clásica europea para liberar tensión muscular, mejorar la circulación y alcanzar un estado de relajación profunda y renovadora.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Relajante</span>
+          <span class="tag">Aceites aromáticos</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$120</div>
+        <div class="service-item__duration">60 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <article class="service-item reveal" data-category="body">
+      <div class="service-item__icon"><span class="material-symbols-outlined">wb_twilight</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Envoltura Corporal Detox</h2>
+        <p class="service-item__desc">Tratamiento purificante con arcillas volcánicas y algas marinas que elimina toxinas, reduce medidas y deja la piel increíblemente suave.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Depurativo</span>
+          <span class="tag">Reafirmante</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$160</div>
+        <div class="service-item__duration">90 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <article class="service-item reveal" data-category="body">
+      <div class="service-item__icon"><span class="material-symbols-outlined">electric_bolt</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Cavitación Ultrasónica</h2>
+        <p class="service-item__desc">Técnica no invasiva para la reducción de grasa localizada mediante ultrasonidos de baja frecuencia. Resultados visibles desde la primera sesión.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Sin cirugía</span>
+          <span class="tag">Reducción de medidas</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$140</div>
+        <div class="service-item__duration">50 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <!-- MEDICINA ESTÉTICA -->
+    <article class="service-item reveal" data-category="aesthetic">
+      <div class="service-item__icon"><span class="material-symbols-outlined">auto_fix_high</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Toxina Botulínica (Bótox)</h2>
+        <p class="service-item__desc">Tratamiento médico para suavizar líneas de expresión y arrugas dinámicas. Resultados naturales que preservan tu expresividad única.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Médico certificado</span>
+          <span class="tag">Resultados 4-6 meses</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">desde $280</div>
+        <div class="service-item__duration">30 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Consultar</a>
+      </div>
+    </article>
+
+    <article class="service-item reveal" data-category="aesthetic">
+      <div class="service-item__icon"><span class="material-symbols-outlined">water_drop</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Rellenos de Ácido Hialurónico</h2>
+        <p class="service-item__desc">Restaura volumen, define contornos y suaviza surcos con rellenos dérmicos premium. Labios, pómulos, ojeras y más.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Resultados 12-18 meses</span>
+          <span class="tag">Reversible</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">desde $350</div>
+        <div class="service-item__duration">45 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Consultar</a>
+      </div>
+    </article>
+
+    <!-- LÁSER -->
+    <article class="service-item reveal" data-category="laser">
+      <div class="service-item__icon"><span class="material-symbols-outlined">wb_sunny</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Fotorrejuvenecimiento IPL</h2>
+        <p class="service-item__desc">Luz pulsada intensa para manchas, rosácea, poros dilatados y tono desigual. Piel más luminosa y uniforme sin recuperación.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Sin tiempo de recuperación</span>
+          <span class="tag">Antimanchas</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$220</div>
+        <div class="service-item__duration">45 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <article class="service-item reveal" data-category="laser">
+      <div class="service-item__icon"><span class="material-symbols-outlined">flash_on</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Depilación Láser Definitiva</h2>
+        <p class="service-item__desc">Sistema láser diodo de última generación para la eliminación permanente del vello. Apto para todos los fototipos de piel.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Todos los fototipos</span>
+          <span class="tag">6-8 sesiones</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">desde $80</div>
+        <div class="service-item__duration">20-60 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+    <!-- BIENESTAR -->
+    <article class="service-item reveal" data-category="wellness">
+      <div class="service-item__icon"><span class="material-symbols-outlined">self_improvement</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Programa de Wellness Personalizado</h2>
+        <p class="service-item__desc">Evaluación integral de salud y bienestar + plan mensual con tratamientos combinados, nutrición y rutinas de autocuidado diseñadas para ti.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag tag--primary">Exclusivo miembros</span>
+          <span class="tag">Plan mensual</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$450/mes</div>
+        <div class="service-item__duration">Mensual</div>
+        <a href="membership.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Ver membresía</a>
+      </div>
+    </article>
+
+    <article class="service-item reveal" data-category="wellness">
+      <div class="service-item__icon"><span class="material-symbols-outlined">local_florist</span></div>
+      <div class="service-item__body">
+        <h2 class="service-item__name">Aromaterapia & Mindfulness</h2>
+        <p class="service-item__desc">Sesión de aromaterapia con aceites esenciales terapéuticos combinada con técnicas de mindfulness y respiración consciente.</p>
+        <div style="display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap">
+          <span class="tag">Antiestrés</span>
+          <span class="tag">Bienestar mental</span>
+        </div>
+      </div>
+      <div class="service-item__meta">
+        <div class="service-item__price">$95</div>
+        <div class="service-item__duration">60 min</div>
+        <a href="contact.html" class="btn btn--primary" style="margin-top:.75rem; padding:.5rem 1rem; font-size:.75rem">Reservar</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══════════════════════════════ -->
+<section class="cta-band">
+  <div class="container" style="text-align:center">
+    <span class="eyebrow" style="color:var(--clr-primary-dim)">¿No sabes por dónde empezar?</span>
+    <h2 class="section-title">Consulta personalizada gratuita</h2>
+    <p class="section-desc">Nuestros especialistas te asesorarán sin compromiso para encontrar el tratamiento ideal según tus objetivos y tipo de piel.</p>
+    <div class="cta-band__actions">
+      <a href="contact.html" class="btn btn--light">Agendar Consulta Gratuita</a>
+      <a href="membership.html" class="btn btn--outline-light">Conocer Membresías</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__grid">
+    <div>
+      <div class="footer__brand-name">Belleza Integral</div>
+      <p class="footer__brand-desc">Redefiniendo la estética moderna a través de la fusión de experiencia médica y visión artística. Tu santuario de belleza holística en Miami.</p>
+    </div>
+    <div>
+      <p class="footer__col-title">Accesos Rápidos</p>
+      <ul class="footer__links">
+        <li><a href="about.html">Nuestra Clínica</a></li>
+        <li><a href="services.html">Galería de Tratamientos</a></li>
+        <li><a href="membership.html">Membresías</a></li>
+        <li><a href="about.html">Nuestro Equipo</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Soporte</p>
+      <ul class="footer__links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Servicio</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a href="#">Empleos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer__col-title">Conecta</p>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="Instagram"><span class="material-symbols-outlined" style="font-size:18px">photo_camera</span></a>
+        <a href="#" class="footer__social" aria-label="Facebook"><span class="material-symbols-outlined" style="font-size:18px">public</span></a>
+        <a href="#" class="footer__social" aria-label="TikTok"><span class="material-symbols-outlined" style="font-size:18px">video_camera_front</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2024 Belleza Integral. Todos los derechos reservados.</p>
+    <nav class="footer__legal"><a href="#">Privacidad</a><a href="#">Términos</a><a href="#">Cookies</a></nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
