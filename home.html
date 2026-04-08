@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#524436",
+                        "primary-fixed-dim": "#e1c19f",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fbf9f5",
+                        "tertiary-fixed": "#ffdbd0",
+                        "outline-variant": "#d1c4b8",
+                        "on-primary-fixed": "#291804",
+                        "secondary-container": "#f4dfcb",
+                        "on-tertiary-fixed-variant": "#5d4037",
+                        "surface-variant": "#e4e2de",
+                        "surface-container": "#efeeea",
+                        "on-surface-variant": "#4e453c",
+                        "surface-container-high": "#eae8e4",
+                        "tertiary-container": "#8f6d62",
+                        "surface-dim": "#dbdad6",
+                        "inverse-primary": "#e1c19f",
+                        "secondary-fixed-dim": "#d7c3b0",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#fffbff",
+                        "primary-container": "#8a7053",
+                        "secondary-fixed": "#f4dfcb",
+                        "surface-container-highest": "#e4e2de",
+                        "tertiary": "#74554b",
+                        "primary-fixed": "#ffddba",
+                        "outline": "#80756b",
+                        "on-secondary-fixed": "#241a0e",
+                        "on-tertiary-fixed": "#2c160e",
+                        "error": "#ba1a1a",
+                        "surface-tint": "#735a3f",
+                        "surface-container-low": "#f5f3ef",
+                        "on-primary-fixed-variant": "#594229",
+                        "background": "#fbf9f5",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "inverse-on-surface": "#f2f0ed",
+                        "primary": "#70573c",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#716252",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1b1c1a",
+                        "on-tertiary-container": "#fffbff",
+                        "secondary": "#6b5c4c",
+                        "on-background": "#1b1c1a",
+                        "surface": "#fbf9f5",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e7bdb1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background-color: rgba(251, 249, 245, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline italic text-stone-800 dark:text-stone-100">
+                Belleza Integral
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline text-lg tracking-wide text-stone-900 dark:text-white border-b border-stone-400 pb-1 hover:scale-105 transition-transform duration-300" href="home.html">Home</a>
+<a class="font-headline text-lg tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:scale-105 transition-transform duration-300" href="services.html">Services</a>
+<a class="font-headline text-lg tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:scale-105 transition-transform duration-300" href="membership.html">Membership</a>
+<a class="font-headline text-lg tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:scale-105 transition-transform duration-300" href="about.html">About</a>
+<a class="font-headline text-lg tracking-wide text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 hover:scale-105 transition-transform duration-300" href="contact.html">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-medium hover:scale-105 transition-transform duration-300">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-6 md:px-12 overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 z-10">
+<span class="label-md uppercase tracking-widest text-primary font-bold mb-4 block">The Art of Aesthetic Balance</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface leading-[1.1] mb-8">
+                        Elevate Your <br/> <span class="italic text-primary">Natural</span> Radiance
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-lg mb-12 leading-relaxed">
+                        A sanctuary where science meets artistry. Discover personalized aesthetic treatments designed to harmonize your inner vitality with outer beauty.
+                    </p>
+<div class="flex flex-wrap gap-6 items-center">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-md text-lg font-semibold hover:scale-105 transition-transform duration-300 shadow-xl shadow-primary/10">
+                            Book Your Session
+                        </button>
+<button class="group flex items-center gap-3 text-primary font-semibold text-lg hover:underline transition-all">
+                            Explore Services
+                            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-6 relative flex justify-end">
+<div class="relative w-full max-w-md aspect-[4/5] rounded-t-full overflow-hidden shadow-2xl z-10">
+<img alt="Professional skin treatment" class="w-full h-full object-cover" data-alt="Close-up of a serene woman receiving a facial treatment with soft natural lighting and warm neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASV0aZf-uuxpHDGnD4F2PvCc-6HibZnLSmAOpdBhHlxIGeO3yHukx4oqerag1gZzDO0p0aZI7mUKjuLEdokeDKUZOHqU9A6KZHW_3dG_yEWmR5y1GdDTKENbROc8NtodKGkYASoshh3y45FX43GMyT_OrMHFC_GWMGAYQ9wHmVjwq31r7jgBKd0xfyNax-e76BZhC7noztFOdVB6DIBYinXzyEqoVYwfILzIKAKMSjfZ603aSEXh7a9DSvInkfiBqwKF2vcyg-oD8"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-primary-fixed-dim/30 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -top-12 right-0 w-32 h-[120%] border-r border-outline-variant/30 -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Asymmetric Bento Grid -->
+<section class="py-24 bg-surface-container-low px-6 md:px-12">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<span class="label-md uppercase tracking-widest text-primary font-bold mb-4 block">Excellence in Care</span>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface">Why Belleza Integral</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02]">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6">workspace_premium</span>
+<h3 class="font-headline text-2xl mb-4">Board-Certified Expertise</h3>
+<p class="text-on-surface-variant leading-relaxed">Our clinical team brings decades of combined experience in advanced aesthetics and medical wellness.</p>
+</div>
+<div class="mt-12 h-48 rounded-lg overflow-hidden">
+<img alt="Clinic interior" class="w-full h-full object-cover" data-alt="Luxurious clinic reception area with marble textures, soft lighting, and minimal wooden accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiBzSGn0O8l2PFQJfOjNp0cvxlmBs5rNR3TGq5RFVi03elCpBaPS5aEG-BcxgOlOGlqil25K_uJbUIfhxz8lH9DMUQKiELm2Nx51OvNMQ2pNhXYX3keDl7V4b1JUTo9YpC1Xgjo7shSnnsSpDr-tHSlrXH3bphtlhiaOz7Cwoy69Hf6smgbq-d_hTIoUE6QidffmCiFMZQeADPJZ-MjRN4griMpWd6cgTD4yVUVTgMQrznf8TNSuQO3yGY4zMzRBnPVhpEzEOqW3o"/>
+</div>
+</div>
+<div class="md:col-span-1 bg-primary text-on-primary p-10 rounded-xl transition-transform duration-300 hover:scale-[1.02]">
+<span class="material-symbols-outlined text-4xl mb-6">verified_user</span>
+<h3 class="font-headline text-2xl mb-4">Premium Tech</h3>
+<p class="text-on-primary/80 leading-relaxed">We invest in the latest FDA-approved technologies for non-invasive treatments that deliver visible, lasting results.</p>
+</div>
+<div class="md:col-span-1 bg-surface-container-lowest p-10 rounded-xl transition-transform duration-300 hover:scale-[1.02]">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">spa</span>
+<h3 class="font-headline text-2xl mb-4">Holistic Focus</h3>
+<p class="text-on-surface-variant leading-relaxed">We treat the whole person, focusing on skin health, nutrition, and well-being.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Services - Floating Cards -->
+<section class="py-32 px-6 md:px-12 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="label-md uppercase tracking-widest text-primary font-bold mb-4 block">Our Curated Menu</span>
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface">Signature Treatments</h2>
+</div>
+<button class="group flex items-center gap-3 text-primary font-semibold text-lg pb-2 border-b border-outline-variant/30 hover:border-primary transition-all">
+                        View Full Directory
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-lg aspect-[3/4] mb-8">
+<img alt="Facial treatment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Macro shot of luxurious skin serum being applied to clean, radiant skin with soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo2Z8ExkRbsVK_QRBFZZtBKIx4nI2FXuSF00UbbrgOZ-9x7cATQ0DwcoqpXijqVRQe_gZRi0j3c2yPmJX4jRehrm8qz3d1n4Zk1zM_OJSW-idkyagKY9pQy6APT94_wCLDkOxmrifw5GxKhFCmzgBYkZlzZqQ1BdOWvhHQSJulh7wkycnsRJO_-npFK8GmpafdI_y07_xaG0YnYo-TReIkKgrDYEbvQV3dfBTqoX7aViVFx0EL33DgsN10DBqK2-GZRCowY9SDBec"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+<span class="text-white text-lg font-medium">Starting from $150</span>
+</div>
+</div>
+<h3 class="font-headline text-2xl mb-3">Rejuvenating HydraFacial</h3>
+<p class="text-on-surface-variant mb-6">A multi-step treatment that cleanses, exfoliates, and extracts impurities while infusing skin with nutrients.</p>
+<button class="text-primary font-bold tracking-tight hover:underline flex items-center gap-2">
+                            Learn more <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+<!-- Service 2 -->
+<div class="group md:mt-12">
+<div class="relative overflow-hidden rounded-lg aspect-[3/4] mb-8">
+<img alt="Laser therapy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Clinical laser treatment equipment in a clean modern medical setting with bright aesthetic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF9nAGofGWrIhGBbq0SQeex3BkrI9bWfeghc1-FZXk2rB1gJ6ia0dbuabJqKE4VF37Uc7PTri8wCakMypCu8nbvNR2gAaWdd4jtsugGo8R6iiKzp5qr_O460RixhIMut4XbO_zqvORSI9OHFhdeUsvcs9ZwIWIfcuTrDrK41gWp0KKa4n1cEIYtKm13LUMhwm-D6qRcxZ-TvJrs9lAvPLNLJ64TsMnQBVvFpbtmOBvWBtXkfsE6Andrs7FGdq0Q8Ruaae8LUDKa04"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+<span class="text-white text-lg font-medium">Starting from $280</span>
+</div>
+</div>
+<h3 class="font-headline text-2xl mb-3">Laser Skin Resurfacing</h3>
+<p class="text-on-surface-variant mb-6">Precision laser technology to reduce fine lines, scars, and sun damage for a smoother complexion.</p>
+<button class="text-primary font-bold tracking-tight hover:underline flex items-center gap-2">
+                            Learn more <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+<!-- Service 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-lg aspect-[3/4] mb-8">
+<img alt="Dermal fillers" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant close-up of a glass bottle containing skin care oil on a marble surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGwTb8PYYSuPoFPCICRcZe0PHKCAN26JknCkLyhXnykefku80RyQxTU9qUm_BoY0DrOUbAiVAOmk45TPnQqQwfyci7_lV_4lAqECOaW-zrRD6VKvH7nfc3aVRI57a3vE8MPsxfrpBn_Mw5T3wnh-by5M6WGAht4pEjHGa7ZYn10r2FIf9U2isp9j0UqpPKQTGoQsHWnbP1mS3fJKu2fgbvTUMDPd3HEfOZ3syXavY363v3s_XHA5b7MMEHPzo6fpgZlzkqRXy8_3o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+<span class="text-white text-lg font-medium">Starting from $450</span>
+</div>
+</div>
+<h3 class="font-headline text-2xl mb-3">Dermal Injectables</h3>
+<p class="text-on-surface-variant mb-6">Subtle and artistic facial contouring to restore volume and enhance your natural features.</p>
+<button class="text-primary font-bold tracking-tight hover:underline flex items-center gap-2">
+                            Learn more <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container px-6 md:px-12">
+<div class="max-w-7xl mx-auto relative">
+<span class="material-symbols-outlined text-[180px] absolute -top-20 -left-10 text-primary-fixed-dim/20 pointer-events-none" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<div class="relative z-10 text-center max-w-4xl mx-auto">
+<span class="label-md uppercase tracking-widest text-primary font-bold mb-8 block">Client Voices</span>
+<div class="space-y-8">
+<p class="font-headline text-3xl md:text-4xl italic text-on-surface leading-relaxed">
+                            "The experience at Belleza Integral is unlike any other. From the moment you walk in, you feel a sense of calm. The results from my treatments have been subtle, natural, and exactly what I hoped for."
+                        </p>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 rounded-full overflow-hidden border-2 border-primary mb-4 p-1">
+<img alt="Client portrait" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a smiling, elegant middle-aged woman with natural glowy skin against a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTtZ5FEoyaScKwd24uvFC_hYViXmEPSm0i5KX37bHlVr6WVxc47jDKes1XFmON_uJ2Yq-IyoD_BtozjjPCgxuQvvJ7QCpbMZVc_nCeezm02ttK63PoPhERZClPFn-lWsFbgdyod5jLtL_xrl1DJGKcNzkOhWhOpoSc_Gth58vscWK-Xe7vjHaxoKEvpCPjNUatglqh6T4mnVVf2KFaXBEeylhRxVwAbS3WIQPpHTEt5Xw1MbsfxjNKr4GS8Vc-ki7mnQiJcTs87x8"/>
+</div>
+<h4 class="font-bold text-lg">Elena Rodriguez</h4>
+<p class="text-on-surface-variant">Membership Client since 2022</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-4 mt-12">
+<button class="w-12 h-12 rounded-full border border-outline-variant text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-6 md:px-12">
+<div class="max-w-7xl mx-auto bg-surface-container-highest rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+<div class="p-12 md:p-20 flex flex-col justify-center">
+<h2 class="font-headline text-4xl md:text-5xl mb-6">Begin Your Journey to <span class="italic text-primary">Radiance</span></h2>
+<p class="text-on-surface-variant text-lg mb-10 leading-relaxed">Schedule a personalized consultation with our experts to create a treatment plan that honors your unique beauty.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:scale-105 transition-transform duration-300">
+                            Book Online
+                        </button>
+<button class="border border-primary text-primary px-8 py-4 rounded-md font-bold text-lg hover:bg-primary/5 transition-all">
+                            Call (555) 012-3456
+                        </button>
+</div>
+</div>
+<div class="relative h-[400px] md:h-auto">
+<img alt="Woman smiling" class="w-full h-full object-cover" data-alt="Sunlit portrait of a woman with radiant skin smiling peacefully in a garden at sunset with golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3mxP0ibYAqMc4i-j3HcM4KNNSv1zWMx5oCbsZ_9YQDlXyZ1SEISmk1GRJRhFlAAjvpAddcprb2qeMf7rapzPGpelmkf0W4jwNJrEbjJHNbxwu6TTM3oG8kodCJzmK_pBFjhjN82AAgTm6lTRickkB63ZeVbJNoRaLwhr3dG4KTOz-sMaDuL1C9j9gHzwh5bzI0nbGR_Xi-0ZzMGJLk4u5xweyaGWInVnP8n-0U60z7nXtH_f1RDgug9AJpXPtKvz5Pa8w1iXHLIQ"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-12 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif text-stone-900 dark:text-stone-100 mb-6">Belleza Integral</div>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed mb-8">
+                    Crafting timeless beauty through innovative aesthetic science and personalized holistic care.
+                </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-stone-900 dark:text-white mb-6 uppercase text-xs tracking-widest">Treatments</h4>
+<ul class="space-y-4 text-sm font-sans text-stone-500 dark:text-stone-400">
+<li><a class="hover:underline transition-all" href="#">Facial Aesthetics</a></li>
+<li><a class="hover:underline transition-all" href="#">Body Contouring</a></li>
+<li><a class="hover:underline transition-all" href="#">Laser Treatments</a></li>
+<li><a class="hover:underline transition-all" href="#">Wellness Programs</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-stone-900 dark:text-white mb-6 uppercase text-xs tracking-widest">Quick Links</h4>
+<ul class="space-y-4 text-sm font-sans">
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline transition-all font-bold text-stone-900 dark:text-white" href="#">FAQ</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:underline transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-bold text-stone-900 dark:text-white mb-6 uppercase text-xs tracking-widest">Connect</h4>
+<p class="text-sm text-stone-500 mb-4">123 Aesthetic Blvd, Suite 100<br/>San Francisco, CA 94103</p>
+<p class="text-sm font-bold text-stone-900">contact@bellezaintegral.com</p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-200 dark:border-stone-800 flex justify-between items-center text-xs text-stone-400">
+<p>© 2026 Belleza Integral. All rights reserved.</p>
+<div class="flex gap-6">
+<span>Designed for Serenity</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#524436",
+                    "primary-fixed-dim": "#e1c19f",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fbf9f5",
+                    "tertiary-fixed": "#ffdbd0",
+                    "outline-variant": "#d1c4b8",
+                    "on-primary-fixed": "#291804",
+                    "secondary-container": "#f4dfcb",
+                    "on-tertiary-fixed-variant": "#5d4037",
+                    "surface-variant": "#e4e2de",
+                    "surface-container": "#efeeea",
+                    "on-surface-variant": "#4e453c",
+                    "surface-container-high": "#eae8e4",
+                    "tertiary-container": "#8f6d62",
+                    "surface-dim": "#dbdad6",
+                    "inverse-primary": "#e1c19f",
+                    "secondary-fixed-dim": "#d7c3b0",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#fffbff",
+                    "primary-container": "#8a7053",
+                    "secondary-fixed": "#f4dfcb",
+                    "surface-container-highest": "#e4e2de",
+                    "tertiary": "#74554b",
+                    "primary-fixed": "#ffddba",
+                    "outline": "#80756b",
+                    "on-secondary-fixed": "#241a0e",
+                    "on-tertiary-fixed": "#2c160e",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#735a3f",
+                    "surface-container-low": "#f5f3ef",
+                    "on-primary-fixed-variant": "#594229",
+                    "background": "#fbf9f5",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-surface": "#30312e",
+                    "inverse-on-surface": "#f2f0ed",
+                    "primary": "#70573c",
+                    "error-container": "#ffdad6",
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#716252",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1b1c1a",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary": "#6b5c4c",
+                    "on-background": "#1b1c1a",
+                    "surface": "#fbf9f5",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#e7bdb1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-on-scroll { transition: background-color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-stone-800">Belleza Integral</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-serif text-lg tracking-wide text-stone-500 hover:text-stone-800 hover:scale-105 transition-transform duration-300" href="home.html">Home</a>
+<a class="font-serif text-lg tracking-wide text-stone-500 hover:text-stone-800 hover:scale-105 transition-transform duration-300" href="services.html">Services</a>
+<a class="font-serif text-lg tracking-wide text-stone-500 hover:text-stone-800 hover:scale-105 transition-transform duration-300" href="membership.html">Membership</a>
+<a class="font-serif text-lg tracking-wide text-stone-500 hover:text-stone-800 hover:scale-105 transition-transform duration-300" href="about.html">About</a>
+<a class="font-serif text-lg tracking-wide text-stone-900 border-b border-stone-400 pb-1 hover:scale-105 transition-transform duration-300" href="contact.html">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-label font-semibold text-sm hover:scale-105 transition-transform duration-300">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 max-w-7xl mx-auto mb-24 overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<p class="text-primary font-label uppercase tracking-[0.2em] text-xs font-bold mb-4">Connect With Us</p>
+<h1 class="text-6xl font-headline leading-tight mb-8">Let's start your journey to <span class="italic">radiant beauty</span></h1>
+<p class="text-on-surface-variant text-lg max-w-xl leading-relaxed">Whether you're seeking a transformative aesthetic procedure or a moment of pure relaxation, our team is here to guide you with expert care and personalized attention.</p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Close-up of a high-end luxury spa interior with warm ambient lighting, marble surfaces, and fresh lilies in a crystal vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN4n-JNkPL6nr3DFpCyH20-Pe8pHM4hoRAW3XJQ_oWT7zReetzMGMtkpy-_eFuX5mdiGolyDXQUWgva8Cgjh75YPeWPsp0NtwReudqaLSMQEAi7cKHfwpwMt9VrNpRMd5n0CXaVhz1Y3l42D6A4n3hfs-eNrYk4q58oHR36BFAaM9ZJaBxAwZYzjvsbX3MgMXsZBSh3EY-zqVCrCXtgulcI9n5Oa2_ew9LZz0ChnPTjIjcj2BA9KY8yFwFgG-p4LnmSyHGk0pqvN4"/>
+</div>
+<!-- Overlapping Decorative Element -->
+<div class="absolute -bottom-8 -left-8 w-32 h-32 bg-primary-fixed-dim/30 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<!-- Form Side -->
+<div class="bg-surface-container-lowest p-12 rounded-xl">
+<h2 class="text-3xl font-headline mb-8">Send a Message</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant">First Name</label>
+<input class="w-full bg-surface-container-highest border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all p-4 rounded-t-lg" placeholder="Elena" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant">Last Name</label>
+<input class="w-full bg-surface-container-highest border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all p-4 rounded-t-lg" placeholder="Rodriguez" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-highest border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all p-4 rounded-t-lg" placeholder="elena@example.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant">Subject</label>
+<select class="w-full bg-surface-container-highest border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all p-4 rounded-t-lg">
+<option>General Inquiry</option>
+<option>Treatment Consultation</option>
+<option>Membership Program</option>
+<option>Careers</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block font-label text-sm text-on-surface-variant">Your Message</label>
+<textarea class="w-full bg-surface-container-highest border-0 border-b-2 border-transparent focus:border-primary focus:ring-0 transition-all p-4 rounded-t-lg" placeholder="How can we help you achieve your goals?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-md font-label font-bold uppercase tracking-widest text-sm hover:scale-[1.02] transition-transform" type="submit">
+                                Send Inquiry
+                            </button>
+</form>
+</div>
+<!-- Info Side -->
+<div class="space-y-16">
+<!-- Contact Blocks -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">call</span>
+<span class="font-label font-bold text-xs uppercase tracking-wider">Phone</span>
+</div>
+<p class="text-xl font-headline">+1 (555) 234-8899</p>
+<p class="text-on-surface-variant text-sm">International: +1 (555) 234-8800</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-label font-bold text-xs uppercase tracking-wider">Email</span>
+</div>
+<p class="text-xl font-headline">concierge@belleza.com</p>
+<p class="text-on-surface-variant text-sm">Response within 24 hours</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label font-bold text-xs uppercase tracking-wider">Location</span>
+</div>
+<p class="text-xl font-headline leading-snug">452 Harmony Plaza, Suite 200<br/>Miami, FL 33101</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">schedule</span>
+<span class="font-label font-bold text-xs uppercase tracking-wider">Clinic Hours</span>
+</div>
+<div class="text-on-surface-variant text-sm space-y-1">
+<p><span class="font-bold">Mon - Fri:</span> 9:00 AM - 8:00 PM</p>
+<p><span class="font-bold">Saturday:</span> 10:00 AM - 6:00 PM</p>
+<p><span class="font-bold">Sunday:</span> By Appointment Only</p>
+</div>
+</div>
+</div>
+<!-- Map Integration -->
+<div class="rounded-xl overflow-hidden h-72 shadow-inner border border-outline-variant/10 relative">
+<div class="absolute inset-0 bg-stone-200">
+<img class="w-full h-full object-cover grayscale opacity-50 contrast-125" data-alt="Stylized map showing luxury boutique locations in a modern urban district with minimalist design" data-location="Miami" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAEgTWYQDWHnr213kVjr-IrFnfL57GQy43Pod6MGPzzWl_4NCVqHZJhh37EhhtVKqTNK_Rp7synNiHLmW4uyng76fJN0Nw-OyAxKwcQjho0_LvoBIQ1r_Y9kpiOUEoTh5_GGaB6IC0sKdEitsmXuiJX6HBMH1n5Yw7jPvyCFxxF6SZJGil-ogy2836ydSmxsMEngqlojgoxwpHCViz_spqZ46nqQNZI4T3otQrZ5Zcl-4AWeQ8zTF30EML9aSsWiey-upw4NGrNDA"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-on-primary p-4 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-24 px-12 bg-background">
+<div class="max-w-5xl mx-auto text-center space-y-8">
+<h3 class="text-4xl font-headline">Join our inner circle</h3>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Subscribe to receive exclusive insights on aesthetic wellness, seasonal membership offers, and invitations to our private clinic events.</p>
+<div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow bg-surface-container border-0 p-4 rounded-lg focus:ring-1 focus:ring-primary" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label font-bold text-sm uppercase tracking-widest whitespace-nowrap">Join Now</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 py-16 px-12 border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-serif text-stone-900">Belleza Integral</div>
+<p class="text-stone-500 font-sans text-sm leading-relaxed">Redefining modern aesthetics through a fusion of medical expertise and artistic vision. Your sanctuary for holistic beauty.</p>
+</div>
+<div class="space-y-6">
+<p class="font-label font-bold text-xs uppercase tracking-widest text-stone-900">Quick Links</p>
+<ul class="space-y-3">
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">About Our Clinic</a></li>
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">Treatment Gallery</a></li>
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">Membership Details</a></li>
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">Our Team</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<p class="font-label font-bold text-xs uppercase tracking-widest text-stone-900">Support</p>
+<ul class="space-y-3">
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">Terms of Service</a></li>
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">FAQ</a></li>
+<li><a class="text-stone-500 font-sans text-sm hover:underline hover:text-stone-900 transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<p class="font-label font-bold text-xs uppercase tracking-widest text-stone-900">Connect</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center text-stone-600 hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">video_camera_front</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-200 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-stone-500 font-sans text-sm">© 2026 Belleza Integral. All rights reserved.</p>
+<div class="flex gap-8 text-stone-400 font-sans text-xs uppercase tracking-widest">
+<span>Certified Aesthetic Center</span>
+<span>HIPAA Compliant</span>
+</div>
+</div>
+</footer>
+</body></html>
